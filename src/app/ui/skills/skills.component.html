@@ -1,0 +1,129 @@
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+<!-- SECCION SKILLS -->
+<section class="skills" id="skills">
+  <div class="contenido-seccion">
+    <h2>Skills</h2>
+    <div class="fila">
+      <!-- Technical Skill -->
+      <div class="col">
+        <h3>Technical Skills</h3>
+        <div class="skill">
+          <span>Javascript</span>
+          <div class="barra-skill">
+            <div class="progreso">
+              <span>48%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>HTML & CSS</span>
+          <div class="barra-skill">
+            <div class="progreso">
+              <span>89%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>ANGUALR</span>
+          <div class="barra-skill">
+            <div class="progreso">
+              <span>35%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Nestjs</span>
+          <div class="barra-skill">
+            <div class="progreso">
+              <span>25%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>SQL</span>
+          <div class="barra-skill">
+            <div class="progreso">
+              <span>60%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Professional Skills -->
+      <div class="col">
+        <h3>Professional Skills</h3>
+        <div class="skill">
+          <span>Comunicación</span>
+          <div class="barra-skill">
+            <div class="progreso">
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Trabajo en Equipo</span>
+          <div class="barra-skill">
+            <div class="progreso">
+              <span>80%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Creatividad</span>
+          <div class="barra-skill">
+            <div class="progreso">
+              <span>78%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Dedicación</span>
+          <div class="barra-skill">
+            <div class="progreso">
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <span>Responsabilidad</span>
+          <div class="barra-skill">
+            <div class="progreso">
+              <span>94%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<script>
+  function efectoHabilidades() {
+    var skills = document.getElementById("skills");
+    var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+    if (distancia_skills >= 300) {
+      let habilidades = document.getElementsByClassName("progreso");
+      habilidades[0].classList.add("javascript");
+      habilidades[1].classList.add("htmlcss");
+      habilidades[2].classList.add("photoshop");
+      habilidades[3].classList.add("wordpress");
+      habilidades[4].classList.add("drupal");
+      habilidades[5].classList.add("comunicacion");
+      habilidades[6].classList.add("trabajo");
+      habilidades[7].classList.add("creatividad");
+      habilidades[8].classList.add("dedicacion");
+      habilidades[9].classList.add("proyect");
+    }
+  }
+  //detecto el scrolling para aplicar la animacion de la barra de habilidades
+  window.onscroll = function () {
+    efectoHabilidades();
+  }
+</script>
+
+
+
